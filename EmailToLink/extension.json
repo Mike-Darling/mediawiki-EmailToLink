@@ -1,0 +1,23 @@
+{
+    "name": "EmailToLink",
+    "version": "1.1.0",
+    "author": "[https://www.mediawiki.org/wiki/User:MikeDarling Mike Darling]",
+    "url": "https://www.mediawiki.org/wiki/Extension:EmailToLink",
+    "descriptionmsg": "emailtolink-desc",
+    "license-name": "GPL-2.0-or-later",
+    "type": "parser",
+    "AutoloadClasses": {
+        "EmailToLinkHooks": "EmailToLink.php"
+    },
+    "Hooks": {
+        "InternalParseBeforeLinks": [
+            "EmailToLinkHooks::onInternalParseBeforeLinks"
+        ]
+    },
+    "i18n": {
+        "en": {
+            "emailtolink-desc": "Automatically converts email addresses into clickable mailto: links."
+        }
+    },
+    "manifest_version": 2
+}
